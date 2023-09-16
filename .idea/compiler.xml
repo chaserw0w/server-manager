@@ -10,12 +10,13 @@
         <module name="back-end" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="17" />
+    <bytecodeTargetLevel target="17">
+      <module name="back-end" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="back-end" options="-parameters" />
-      <module name="server" options="" />
     </option>
   </component>
 </project>

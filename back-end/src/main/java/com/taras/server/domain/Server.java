@@ -1,6 +1,6 @@
 package com.taras.server.domain;
 
-import com.taras.server.enumaration.Status;
+import com.taras.server.enumeration.Status;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;

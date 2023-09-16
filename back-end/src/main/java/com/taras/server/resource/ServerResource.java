@@ -2,7 +2,6 @@ package com.taras.server.resource;
 
 import com.taras.server.domain.Response;
 import com.taras.server.domain.Server;
-import com.taras.server.enumaration.Status;
 import com.taras.server.service.implementation.ServerServiceImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
 
-import static com.taras.server.enumaration.Status.SERVER_UP;
+import static com.taras.server.enumeration.Status.SERVER_UP;
 import static java.time.LocalDateTime.now;
 import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.OK;

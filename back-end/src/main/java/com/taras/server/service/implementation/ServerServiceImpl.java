@@ -1,13 +1,11 @@
 package com.taras.server.service.implementation;
 
 import com.taras.server.domain.Server;
-import com.taras.server.enumaration.Status;
 import com.taras.server.repo.ServerRepository;
 import com.taras.server.service.ServerService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -16,8 +14,8 @@ import java.net.InetAddress;
 import java.util.Collection;
 import java.util.Random;
 
-import static com.taras.server.enumaration.Status.SERVER_DOWN;
-import static com.taras.server.enumaration.Status.SERVER_UP;
+import static com.taras.server.enumeration.Status.SERVER_DOWN;
+import static com.taras.server.enumeration.Status.SERVER_UP;
 import static java.lang.Boolean.*;
 import static org.springframework.data.domain.PageRequest.of;
 

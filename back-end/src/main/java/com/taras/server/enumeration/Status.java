@@ -1,4 +1,4 @@
-package com.taras.server.enumaration;
+package com.taras.server.enumeration;
 
 public enum Status {
     SERVER_UP("SERVER_UP"),

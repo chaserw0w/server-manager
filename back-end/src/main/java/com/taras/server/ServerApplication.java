@@ -1,14 +1,13 @@
 package com.taras.server;
 
 import com.taras.server.domain.Server;
-import com.taras.server.enumaration.Status;
 import com.taras.server.repo.ServerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import static com.taras.server.enumaration.Status.*;
+import static com.taras.server.enumeration.Status.*;
 
 @SpringBootApplication
 public class ServerApplication {
