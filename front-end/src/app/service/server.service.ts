@@ -43,6 +43,7 @@ export class ServerService {
     new Observable<CustomResponse> (
       subscriber => {
         console.log(response);
+        // @ts-ignore
         subscriber.next(
           status === Status.ALL ? { ...response, message: `Servers filtered by ${status} status`} :
             {
@@ -51,7 +52,8 @@ export class ServerService {
               .filter(server => server.status === status).length > 0 ? `Servers filtered by
                ${status === Status.SERVER_UP ? 'SERVER UP'
                 : 'SERVER_DOWN'} status` : `No servers of ${status} found`,
-              data: { servers: response.data.servers
+              data: {
+                servers: response.data.servers
                   .filter(server => server.status === status)}
             }
         );
