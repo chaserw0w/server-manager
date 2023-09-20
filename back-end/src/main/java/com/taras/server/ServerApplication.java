@@ -32,7 +32,7 @@ public class ServerApplication {
 	}
 
 	@Bean
-	public org.springframework.web.filter.CorsFilter corsFilter() {
+	public CorsFilter corsFilter() {
 		UrlBasedCorsConfigurationSource urlBasedCorsConfigurationSource = new UrlBasedCorsConfigurationSource();
 		CorsConfiguration config = new CorsConfiguration();
 		config.setAllowCredentials(true);
